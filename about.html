@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About Route 62 Holdings - An investment philosophy shaped by real operating experience and deep alignment with entrepreneurs.">
+  <title>About Us - Route 62 Holdings</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+  <!-- ══════════════════════ NAV ══════════════════════ -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Route 62 Holdings - Home">
+        <img src="assets/logo/route62_logo.jpg" alt="Route 62 Holdings" style="filter: brightness(0) invert(1);">
+      </a>
+
+      <div class="nav-center">
+        <div class="nav-pills-wrap">
+          <a href="index.html"      class="nav-link">Home</a>
+          <a href="about.html"      class="nav-link active">About Us</a>
+          <a href="investment.html" class="nav-link">Investment Criteria</a>
+        </div>
+      </div>
+
+      <div class="nav-right">
+        <a href="#connect" class="btn-nav-cta">Get in Touch &rarr;</a>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile overlay menu -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <a href="index.html"      class="mobile-link">Home</a>
+    <a href="about.html"      class="mobile-link">About Us</a>
+    <a href="investment.html" class="mobile-link">Investment Criteria</a>
+    <a href="#connect"        class="mobile-link mobile-cta">Get in Touch &rarr;</a>
+  </div>
+
+  <!-- ══════════════════════ HERO ══════════════════════ -->
+  <section class="page-hero about-hero" aria-label="About Us hero">
+    <!-- Image background -->
+    <div class="about-hero-video-wrap" aria-hidden="true">
+      <img src="assets/images/Mountain.jpeg" alt="" class="hero-video">
+    </div>
+    <div class="hero-overlay" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <div>
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span class="sep" aria-hidden="true">&bull;</span>
+          <span aria-current="page">About</span>
+        </nav>
+        <h1 class="hero-headline section-heading">About Us</h1>
+      </div>
+      <p class="hero-tagline">An Investment Philosophy Shaped by Real Operating Experience and Deep Alignment with Entrepreneurs</p>
+    </div>
+
+    <span class="scroll-hint" aria-hidden="true">Scroll to Explore <span class="arrow">&darr;</span></span>
+  </section>
+
+  <!-- ══════════════════════ LEADERSHIP TEAM ══════════════════════ -->
+  <section class="team-section" id="team">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <h2 class="section-title section-heading">Our Leadership Team</h2>
+      </div>
+
+      <div class="team-grid">
+
+        <!-- ── Max Araya ── -->
+        <article class="team-card reveal">
+          <div class="team-headshot">
+            <img src="assets/images/Max.png" alt="Max Araya" loading="lazy">
+          </div>
+          <div class="team-body">
+            <h3 class="team-name">Max Araya</h3>
+            <p class="team-role">Co-Founder</p>
+            <div class="team-rule"></div>
+            <p class="team-tagline">&ldquo;Drawn to how businesses actually work - and driven to make them better.&rdquo;</p>
+            <div class="team-li-wrap">
+              <a
+                href="https://www.linkedin.com/in/max-araya/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-linkedin"
+                aria-label="Max Araya on LinkedIn"
+              >LinkedIn &rarr;</a>
+            </div>
+            <ul class="team-bullets">
+              <li>VP, Fruition Partners Private Equity - Denver, CO (Dec 2023-Present)</li>
+              <li>Associate, Oaktree Capital Management - New York (2020-2022, Mezzanine Fund)</li>
+              <li>Investment Banking Analyst, J.P. Morgan - New York (2016-2020, Leveraged Finance / TMT)</li>
+              <li>Middlebury College, B.A. International Politics &amp; Economics; LSE, Accounting &amp; Finance</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- ── Nicole B ── -->
+        <article class="team-card reveal reveal-d2">
+          <div class="team-headshot">
+            <img src="assets/images/Nicole.png" alt="Nicole B" loading="lazy">
+          </div>
+          <div class="team-body">
+            <h3 class="team-name">Nicole B</h3>
+            <p class="team-role">Co-Founder</p>
+            <div class="team-rule"></div>
+            <p class="team-tagline">&ldquo;Operational instincts shaped by family business roots and a decade of working with owners.&rdquo;</p>
+            <div class="team-li-wrap">
+              <!-- [PLACEHOLDER] Update LinkedIn URL when available -->
+              <a href="#" class="btn btn-linkedin" aria-label="Nicole B on LinkedIn">LinkedIn &rarr;</a>
+            </div>
+            <ul class="team-bullets">
+              <li>Wealth Management, Family Office - Connecticut</li>
+              <li>Background in operations, client relations, and family business dynamics</li>
+              <li>Bentley University, Finance</li>
+              <li>Grew up around family-owned businesses; deep appreciation for succession and continuity</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════ CONNECT ══════════════════════ -->
+  <section class="connect-section" id="connect">
+    <div class="container">
+      <span class="label label-muted">GET IN TOUCH</span>
+      <h2 class="connect-heading section-heading reveal">Ready to Start a Conversation?</h2>
+      <p class="connect-sub reveal reveal-d1">Whether you&rsquo;re a business owner thinking about the future, or an entrepreneur exploring partnership - we&rsquo;d love to hear from you.</p>
+      <div class="connect-ctas reveal reveal-d2">
+        <!-- [PLACEHOLDER] Update scheduling link -->
+        <a href="#" class="btn btn-gold">Schedule a Call &rarr;</a>
+        <a href="mailto:team@route62holdings.com" class="btn btn-white-outline">Send Us a Message &rarr;</a>
+      </div>
+      <p class="connect-email reveal reveal-d3">
+        <a href="mailto:team@route62holdings.com">team@route62holdings.com</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ══════════════════════ FOOTER ══════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div>
+          <div class="footer-logo">
+            <img src="assets/logo/route62_logo.jpg" alt="Route 62 Holdings" style="filter: brightness(0) invert(1);">
+          </div>
+          <p class="footer-tagline">Keeping family businesses in family hands.</p>
+        </div>
+
+        <div>
+          <p class="footer-col-heading">Quick Links</p>
+          <nav class="footer-links" aria-label="Footer navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="investment.html">Investment Criteria</a>
+          </nav>
+        </div>
+
+        <div class="footer-contact">
+          <p class="footer-col-heading">Contact</p>
+          <p><a href="mailto:team@route62holdings.com">team@route62holdings.com</a></p>
+          <p>Denver, Colorado</p>
+          <p>Est. 2025</p>
+        </div>
+
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Route 62 Holdings LLC. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

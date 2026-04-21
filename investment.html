@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Investment Criteria - Route 62 Holdings evaluates every opportunity on its own merits with a flexible, operator-first approach.">
+  <title>Investment Criteria - Route 62 Holdings</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+  <!-- ══════════════════════ NAV ══════════════════════ -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Route 62 Holdings - Home">
+        <img src="assets/logo/route62_logo.jpg" alt="Route 62 Holdings" style="filter: brightness(0) invert(1);">
+      </a>
+
+      <div class="nav-center">
+        <div class="nav-pills-wrap">
+          <a href="index.html"      class="nav-link">Home</a>
+          <a href="about.html"      class="nav-link">About Us</a>
+          <a href="investment.html" class="nav-link active">Investment Criteria</a>
+        </div>
+      </div>
+
+      <div class="nav-right">
+        <a href="#connect" class="btn-nav-cta">Get in Touch &rarr;</a>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile overlay menu -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <a href="index.html"      class="mobile-link">Home</a>
+    <a href="about.html"      class="mobile-link">About Us</a>
+    <a href="investment.html" class="mobile-link">Investment Criteria</a>
+    <a href="#connect"        class="mobile-link mobile-cta">Get in Touch &rarr;</a>
+  </div>
+
+  <!-- ══════════════════════ HERO ══════════════════════ -->
+  <section class="page-hero investment-hero" aria-label="Investment Criteria hero">
+    <div class="invest-hero-bg" role="img" aria-label="Background" aria-hidden="true"></div>
+    <div class="hero-overlay" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <div>
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span class="sep" aria-hidden="true">&bull;</span>
+          <span aria-current="page">Investment Criteria</span>
+        </nav>
+        <h1 class="hero-headline section-heading">Investment Criteria</h1>
+      </div>
+      <p class="hero-tagline">We Are Flexible and Evaluate Every Opportunity on its Own Merits</p>
+    </div>
+
+    <span class="scroll-hint" aria-hidden="true">Scroll to Explore <span class="arrow">&darr;</span></span>
+  </section>
+
+  <!-- ══════════════════════ CRITERIA ══════════════════════ -->
+  <section class="criteria-section" id="criteria">
+    <div class="container">
+
+      <div class="criteria-layout">
+
+        <!-- Left: sticky heading -->
+        <div class="criteria-left-sticky reveal">
+          <h2 class="section-title section-heading" style="text-align:left; margin-bottom: 16px;">What Defines the Right Opportunity</h2>
+          <p class="criteria-sub-text">Our most successful partnerships tend to align with these principles.</p>
+        </div>
+
+        <!-- Right: 2-column cards grid -->
+        <div class="criteria-cards card-grid">
+
+          <div class="criteria-card card reveal">
+            <h3 class="criteria-card-title">Investment Size</h3>
+            <p class="criteria-card-body">We typically invest between $500K-$5M of minority equity, with a preferred range of $1-3M per deal.</p>
+          </div>
+
+          <div class="criteria-card card reveal reveal-d1">
+            <h3 class="criteria-card-title">Geography</h3>
+            <p class="criteria-card-body">Our search is hyper-local - Denver metro, Boulder, and within a 50-mile radius. We want to be close to what we build.</p>
+          </div>
+
+          <div class="criteria-card card reveal reveal-d1">
+            <h3 class="criteria-card-title">ETA Model</h3>
+            <p class="criteria-card-body">We are open to all ETA models, including traditional search funds, self-funded searchers, committed capital vehicles, long-term holds, and independent sponsors.</p>
+          </div>
+
+          <div class="criteria-card card reveal reveal-d2">
+            <h3 class="criteria-card-title">Industry Focus</h3>
+            <p class="criteria-card-body">We focus on recession-resilient, essential service businesses - home services, commercial cleaning, pest control, fire safety, landscaping, traffic control, home healthcare, and skilled trades. Businesses that communities depend on regardless of the economy.</p>
+          </div>
+
+          <div class="criteria-card card reveal reveal-d2">
+            <h3 class="criteria-card-title">Business Profile</h3>
+            <p class="criteria-card-body">We look for bootstrapped, owner-operated businesses with 1-100 employees, $750K-$10M EBITDA, and $1M-$50M in revenue. No prior PE or VC - we prefer businesses that have grown organically under strong ownership.</p>
+          </div>
+
+          <div class="criteria-card card reveal reveal-d2">
+            <h3 class="criteria-card-title">Deal Structure</h3>
+            <p class="criteria-card-body">We look for an attractive deal price and structure with a clear alignment of incentives.</p>
+          </div>
+
+          <div class="criteria-card card reveal reveal-d3">
+            <h3 class="criteria-card-title">Buyer Edge</h3>
+            <p class="criteria-card-body">Seeking a credible, compelling right to win.</p>
+          </div>
+
+          <div class="criteria-card card reveal reveal-d3">
+            <h3 class="criteria-card-title">Cap Table</h3>
+            <p class="criteria-card-body">For traditional search funds, we target a cap table allocation of 5-15%.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════ CONNECT ══════════════════════ -->
+  <section class="connect-section" id="connect">
+    <div class="container">
+      <span class="label label-muted">GET IN TOUCH</span>
+      <h2 class="connect-heading section-heading reveal">Ready to Start a Conversation?</h2>
+      <p class="connect-sub reveal reveal-d1">Whether you&rsquo;re a business owner thinking about the future, or an entrepreneur exploring partnership - we&rsquo;d love to hear from you.</p>
+      <div class="connect-ctas reveal reveal-d2">
+        <!-- [PLACEHOLDER] Update scheduling link -->
+        <a href="#" class="btn btn-gold">Schedule a Call &rarr;</a>
+        <a href="mailto:team@route62holdings.com" class="btn btn-white-outline">Send Us a Message &rarr;</a>
+      </div>
+      <p class="connect-email reveal reveal-d3">
+        <a href="mailto:team@route62holdings.com">team@route62holdings.com</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ══════════════════════ FOOTER ══════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div>
+          <div class="footer-logo">
+            <img src="assets/logo/route62_logo.jpg" alt="Route 62 Holdings" style="filter: brightness(0) invert(1);">
+          </div>
+          <p class="footer-tagline">Keeping family businesses in family hands.</p>
+        </div>
+
+        <div>
+          <p class="footer-col-heading">Quick Links</p>
+          <nav class="footer-links" aria-label="Footer navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="investment.html">Investment Criteria</a>
+          </nav>
+        </div>
+
+        <div class="footer-contact">
+          <p class="footer-col-heading">Contact</p>
+          <p><a href="mailto:team@route62holdings.com">team@route62holdings.com</a></p>
+          <p>Denver, Colorado</p>
+          <p>Est. 2025</p>
+        </div>
+
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Route 62 Holdings LLC. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
