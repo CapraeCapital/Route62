@@ -97,7 +97,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   gap: 20px;
 }
 
-.nav-logo img {
+.nav-logo img,
+.nav-logo svg {
   height: 42px;
   width: auto;
   object-fit: contain;
@@ -1172,4 +1173,94 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .hero-headline { font-size: 2rem; }
   .hero-ctas     { flex-direction: column; align-items: flex-start; }
   .hero-page-title { font-size: 2.4rem; }
+}
+
+/* ═══════════════════════════════════
+   HOME PAGE: light hero, dark text
+   ═══════════════════════════════════ */
+
+/* Logo: dark navy on home */
+.page-home .nav-logo svg text {
+  fill: #1B2A4A;
+}
+
+/* Nav links + pill */
+.page-home .nav-pills-wrap {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: rgba(27, 42, 74, 0.1);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+.page-home .nav-link {
+  color: #1B2A4A;
+}
+.page-home .nav-link:hover {
+  color: #4A90D9;
+  background: rgba(27, 42, 74, 0.06);
+}
+.page-home .nav-link.active {
+  background: #1B2A4A;
+  color: #ffffff;
+}
+.page-home .btn-nav-cta {
+  border-color: #1B2A4A;
+  color: #1B2A4A;
+}
+.page-home .btn-nav-cta:hover {
+  background: #1B2A4A;
+  border-color: #1B2A4A;
+  color: #ffffff;
+}
+
+/* Hamburger lines visible against light hero */
+.page-home .hamburger span {
+  background: #1B2A4A;
+}
+
+/* Hero overlay: kill warm tint + dark gradient, replace with subtle bottom vignette */
+.page-home .hero-bg::before {
+  display: none;
+}
+.page-home .hero-bg::after {
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    transparent 60%,
+    rgba(255, 255, 255, 0.15) 85%,
+    rgba(255, 255, 255, 0.35) 100%
+  );
+}
+
+/* Hero text */
+.page-home .hero-headline {
+  color: #1B2A4A;
+}
+.page-home .hero-sub {
+  color: rgba(27, 42, 74, 0.72);
+}
+.page-home .scroll-hint {
+  color: rgba(27, 42, 74, 0.5);
+}
+
+/* Hero CTA buttons */
+.page-home .btn-white-outline {
+  background: transparent;
+  color: #1B2A4A;
+  border-color: rgba(27, 42, 74, 0.35);
+}
+.page-home .btn-white-outline:hover {
+  background: rgba(27, 42, 74, 0.06);
+  color: #1B2A4A;
+  border-color: #1B2A4A;
+}
+.page-home .btn-dark-pill {
+  background: #1B2A4A;
+  color: #ffffff;
+  border-color: #1B2A4A;
+  backdrop-filter: none;
+}
+.page-home .btn-dark-pill:hover {
+  background: #4A90D9;
+  border-color: #4A90D9;
+  color: #ffffff;
 }
