@@ -108,12 +108,13 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .nav-pills-wrap {
   display: flex;
   align-items: center;
-  background: rgba(255,255,255,0.07);
+  background: rgba(255, 255, 255, 0.15);
   border: 1px solid rgba(255,255,255,0.12);
   border-radius: 50px;
   padding: 5px;
   gap: 2px;
   backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
 
 .nav-link {
@@ -129,8 +130,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 .nav-link:hover { color: #fff; background: rgba(255,255,255,0.1); }
 .nav-link.active {
-  background: var(--color-navy);
-  color: #fff;
+  background: #1B2A4A;
+  color: #ffffff !important;
   font-weight: 600;
 }
 
@@ -140,18 +141,19 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   gap: 6px;
   padding: 9px 22px;
   border-radius: 50px;
-  border: 1.5px solid var(--color-navy);
+  border: 1.5px solid #ffffff;
   font-size: 0.8125rem;
   font-weight: 500;
-  color: var(--color-navy);
+  color: #ffffff;
+  background: transparent;
   white-space: nowrap;
   transition: all 0.25s;
   letter-spacing: 0.02em;
 }
 .btn-nav-cta:hover {
-  background: var(--color-blue);
-  color: #fff;
-  border-color: var(--color-blue);
+  background: #ffffff;
+  color: #1B2A4A;
+  border-color: #ffffff;
 }
 
 /* Hamburger */
@@ -1176,91 +1178,83 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 
 /* ═══════════════════════════════════
-   HOME PAGE: light hero, dark text
+   HOME PAGE: light mountain bg, warm navy overlay, white text
    ═══════════════════════════════════ */
 
-/* Logo: dark navy on home */
-.page-home .nav-logo svg text {
-  fill: #1B2A4A;
+/* Hero background image vertical anchor */
+.page-home .hero-bg img {
+  object-position: center 30%;
 }
 
-/* Nav links + pill */
-.page-home .nav-pills-wrap {
-  background: rgba(255, 255, 255, 0.25);
-  border-color: rgba(27, 42, 74, 0.1);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-}
-.page-home .nav-link {
-  color: #1B2A4A;
-}
-.page-home .nav-link:hover {
-  color: #4A90D9;
-  background: rgba(27, 42, 74, 0.06);
-}
-.page-home .nav-link.active {
-  background: #1B2A4A;
-  color: #ffffff;
-}
-.page-home .btn-nav-cta {
-  border-color: #1B2A4A;
-  color: #1B2A4A;
-}
-.page-home .btn-nav-cta:hover {
-  background: #1B2A4A;
-  border-color: #1B2A4A;
-  color: #ffffff;
-}
-
-/* Hamburger lines visible against light hero */
-.page-home .hamburger span {
-  background: #1B2A4A;
-}
-
-/* Hero overlay: kill warm tint + dark gradient, replace with subtle bottom vignette */
+/* Hero overlay: warm navy tint (replaces warm sepia + dark gradient) */
 .page-home .hero-bg::before {
   display: none;
 }
 .page-home .hero-bg::after {
-  background: linear-gradient(
-    to bottom,
-    transparent 0%,
-    transparent 60%,
-    rgba(255, 255, 255, 0.15) 85%,
-    rgba(255, 255, 255, 0.35) 100%
-  );
+  background: rgba(13, 21, 32, 0.35);
 }
 
 /* Hero text */
 .page-home .hero-headline {
-  color: #1B2A4A;
+  color: #ffffff;
 }
 .page-home .hero-sub {
-  color: rgba(27, 42, 74, 0.72);
+  color: rgba(255, 255, 255, 0.80);
 }
 .page-home .scroll-hint {
-  color: rgba(27, 42, 74, 0.5);
+  color: rgba(255, 255, 255, 0.50);
 }
 
-/* Hero CTA buttons */
+/* Hero CTA buttons: Get in Touch = white solid (primary), Learn More = transparent (secondary) */
 .page-home .btn-white-outline {
-  background: transparent;
+  background: #ffffff;
   color: #1B2A4A;
-  border-color: rgba(27, 42, 74, 0.35);
+  border: none;
 }
 .page-home .btn-white-outline:hover {
-  background: rgba(27, 42, 74, 0.06);
+  background: rgba(255, 255, 255, 0.88);
   color: #1B2A4A;
-  border-color: #1B2A4A;
 }
 .page-home .btn-dark-pill {
-  background: #1B2A4A;
+  background: transparent;
   color: #ffffff;
-  border-color: #1B2A4A;
+  border: 1px solid rgba(255, 255, 255, 0.40);
   backdrop-filter: none;
 }
 .page-home .btn-dark-pill:hover {
-  background: #4A90D9;
-  border-color: #4A90D9;
+  background: transparent;
+  border-color: #ffffff;
   color: #ffffff;
+}
+
+/* Hero text position: bottom-left, explicit overrides for any inherited values */
+.page-home .hero-content {
+  position: absolute;
+  top: auto;
+  left: 6%;
+  right: auto;
+  bottom: 12%;
+  max-width: 52%;
+  margin: 0;
+  transform: none;
+  text-align: left;
+  z-index: 2;
+}
+.page-home .hero-content .container {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+.page-home .hero-headline {
+  font-size: clamp(2.2rem, 3.8vw, 4rem);
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+}
+
+.page-home .stat-card {
+  position: absolute;
+  bottom: 12%;
+  right: 6%;
 }

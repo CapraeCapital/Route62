@@ -109,7 +109,7 @@
 
   /* ── Hero word-by-word headline reveal ── */
   function initHeroWordReveal() {
-    const headline = document.querySelector('.hero-headline');
+    const headline = document.querySelector('.hero-headline:not(.section-heading)');
     if (!headline) return;
 
     const words = headline.textContent.trim().split(/\s+/);
